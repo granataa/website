@@ -118,6 +118,18 @@ h2 {
 }
 .sec-body { min-width: 0; display: grid; gap: 22px; align-content: start; }
 .sec-body p { margin: 0; max-width: 62ch; }
+/* Justified body text on wide screens, with hyphenation in the page language; left-aligned on phones to avoid gaps */
+@media (min-width: 721px) {
+  .lead, .sec-body > p, footer .privacy { text-align: justify; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 3 3; }
+}
+/* Justified running text on wide screens only, with hyphenation in the page language (it/en).
+   Narrow columns (skill blocks, phones) stay left-aligned to avoid gaps between words. */
+@media (min-width: 721px) {
+  .lead, .sec-body > p {
+    text-align: justify; text-align-last: left;
+    -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 3 3;
+  }
+}
 
 .scope { display: grid; gap: 8px; }
 .scope canvas { display: block; width: 100%; height: 84px; background: var(--panel); }
