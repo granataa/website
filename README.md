@@ -12,3 +12,4 @@ Sito personale statico di Alessandro Granata (IU8DKG).
 
 Nessun passo di build, nessun cookie, nessuna richiesta a servizi esterni.
 I font sono distribuiti con licenza SIL Open Font License 1.1 (vedi `public/fonts/`).
+
