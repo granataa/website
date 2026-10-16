@@ -122,14 +122,6 @@ h2 {
 @media (min-width: 721px) {
   .lead, .sec-body > p, footer .privacy { text-align: justify; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 3 3; }
 }
-/* Justified running text on wide screens only, with hyphenation in the page language (it/en).
-   Narrow columns (skill blocks, phones) stay left-aligned to avoid gaps between words. */
-@media (min-width: 721px) {
-  .lead, .sec-body > p {
-    text-align: justify; text-align-last: left;
-    -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 3 3;
-  }
-}
 
 .scope { display: grid; gap: 8px; }
 .scope canvas { display: block; width: 100%; height: 84px; background: var(--panel); }
@@ -275,7 +267,7 @@ footer .privacy { margin: 0 0 16px; max-width: 80ch; font: 400 12.5px/1.6 var(--
 
 <footer>
   <div class="wrap privacy-wrap">
-    <p class="privacy" data-i18n="privacy">Informativa privacy. Titolare del trattamento: Alessandro Granata. Il sito non utilizza cookie di profilazione né strumenti di analisi statistica o di tracciamento. Il servizio è erogato tramite l&#39;infrastruttura di Cloudflare, Inc., che tratta dati tecnici di navigazione, come l&#39;indirizzo IP, al solo fine di garantire il funzionamento e la sicurezza del sito, sulla base del legittimo interesse del titolare (art. 6, par. 1, lett. f, GDPR); tali dati possono essere trattati anche al di fuori dello Spazio economico europeo, con le garanzie previste dal GDPR. La preferenza di lingua è memorizzata esclusivamente nel browser dell&#39;utente, con finalità tecniche. Per l&#39;esercizio dei diritti di cui agli artt. 15–22 GDPR è possibile contattare il titolare tramite i recapiti indicati nella sezione Contatti.</p>
+    <p class="privacy" data-i18n="privacy">Informativa privacy. Titolare del trattamento: Alessandro Granata. Il sito non utilizza cookie né strumenti di profilazione o tracciamento; per statistiche di visita aggregate e anonime si avvale di Cloudflare Web Analytics, che non impiega cookie né identificativi persistenti. Il servizio è erogato tramite l&#39;infrastruttura di Cloudflare, Inc., che tratta dati tecnici di navigazione, come l&#39;indirizzo IP, al solo fine di garantire il funzionamento e la sicurezza del sito, sulla base del legittimo interesse del titolare (art. 6, par. 1, lett. f, GDPR); tali dati possono essere trattati anche al di fuori dello Spazio economico europeo, con le garanzie previste dal GDPR. La preferenza di lingua è memorizzata esclusivamente nel browser dell&#39;utente, con finalità tecniche. Per l&#39;esercizio dei diritti di cui agli artt. 15–22 GDPR è possibile contattare il titolare tramite i recapiti indicati nella sezione Contatti.</p>
   </div>
   <div class="wrap">
     <span>© 2026 Alessandro Granata</span>
@@ -313,7 +305,7 @@ footer .privacy { margin: 0 0 16px; max-width: 80ch; font: 400 12.5px/1.6 var(--
     "f1.t": "Callsigns",
     "f2.t": "Bands",
     "f3.d": "Satellite communications",
-    "privacy": "Privacy notice. Data controller: Alessandro Granata. This website uses no profiling cookies and no analytics or tracking tools. It is delivered through the infrastructure of Cloudflare, Inc., which processes technical browsing data, such as IP addresses, solely to ensure the operation and security of the website, on the basis of the controller's legitimate interest (Art. 6(1)(f) GDPR); such data may also be processed outside the European Economic Area, subject to the safeguards provided by the GDPR. The language preference is stored only in the user's browser, for technical purposes. To exercise the rights under Articles 15–22 GDPR, please contact the controller through the details given in the Contact section.",
+    "privacy": "Privacy notice. Data controller: Alessandro Granata. This website uses no cookies and no profiling or tracking tools; for aggregate, anonymous visitor statistics it relies on Cloudflare Web Analytics, which uses neither cookies nor persistent identifiers. It is delivered through the infrastructure of Cloudflare, Inc., which processes technical browsing data, such as IP addresses, solely to ensure the operation and security of the website, on the basis of the controller's legitimate interest (Art. 6(1)(f) GDPR); such data may also be processed outside the European Economic Area, subject to the safeguards provided by the GDPR. The language preference is stored only in the user's browser, for technical purposes. To exercise the rights under Articles 15–22 GDPR, please contact the controller through the details given in the Contact section.",
     "contact.title": "Contact",
     "contact.p": "My experience and projects are detailed on LinkedIn, which is also the easiest way to reach me, for work or for a QSO."
   };
@@ -583,5 +575,8 @@ footer .privacy { margin: 0 0 16px; max-width: 80ch; font: 400 12.5px/1.6 var(--
 })();
 </script>
 
+<!-- Cloudflare Web Analytics: statistiche aggregate senza cookie (vedi informativa nel footer) -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6e43b0a122584f86a15d5f798c6de847"}'></script>
+<!-- End Cloudflare Web Analytics -->
 </body>
 </html>
