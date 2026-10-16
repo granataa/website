@@ -1,0 +1,8 @@
+{
+  // Sito statico servito da Cloudflare Workers (static assets)
+  "name": "alessandrogranata",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public"
+  }
+}
