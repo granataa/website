@@ -1,4 +1,4 @@
-# robots.txt — alessandrogranata.it
+# robots.txt - alessandrogranata.it
 # Tutti i crawler (motori di ricerca e AI) possono leggere tutto il sito.
 User-agent: *
 Allow: /
